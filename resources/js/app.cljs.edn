@@ -1,0 +1,3 @@
+{:require  [cljslide.app]
+ :init-fns [cljslide.app/init]
+ :compiler-options {:asset-path "js/app.out"}}

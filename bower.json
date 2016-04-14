@@ -1,0 +1,21 @@
+{
+  "name": "clojure-slide",
+  "version": "0.0.1",
+  "authors": [
+    "coldnew.tw@gmail.com"
+  ],
+  "description": "Meetup presentation for clojurians in Taiwan.",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "remark": "~0.13.0",
+    "bootstrap": "3.3.6"
+  }
+}
