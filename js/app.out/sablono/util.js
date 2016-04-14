@@ -66,14 +66,14 @@ throw cljs.core.missing_protocol("ToURI.to-uri",x);
  */
 sablono.util.as_str = (function sablono$util$as_str(var_args){
 var args__7549__auto__ = [];
-var len__7542__auto___18909 = arguments.length;
-var i__7543__auto___18910 = (0);
+var len__7542__auto___18907 = arguments.length;
+var i__7543__auto___18908 = (0);
 while(true){
-if((i__7543__auto___18910 < len__7542__auto___18909)){
-args__7549__auto__.push((arguments[i__7543__auto___18910]));
+if((i__7543__auto___18908 < len__7542__auto___18907)){
+args__7549__auto__.push((arguments[i__7543__auto___18908]));
 
-var G__18911 = (i__7543__auto___18910 + (1));
-i__7543__auto___18910 = G__18911;
+var G__18909 = (i__7543__auto___18908 + (1));
+i__7543__auto___18908 = G__18909;
 continue;
 } else {
 }
@@ -90,17 +90,17 @@ return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.str,cljs.core.map
 
 sablono.util.as_str.cljs$lang$maxFixedArity = (0);
 
-sablono.util.as_str.cljs$lang$applyTo = (function (seq18908){
-return sablono.util.as_str.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq18908));
+sablono.util.as_str.cljs$lang$applyTo = (function (seq18906){
+return sablono.util.as_str.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq18906));
 });
 /**
  * Returns camel case version of the key, e.g. :http-equiv becomes :httpEquiv.
  */
 sablono.util.camel_case = (function sablono$util$camel_case(k){
 if(((k instanceof cljs.core.Keyword)) || (typeof k === 'string') || ((k instanceof cljs.core.Symbol))){
-var vec__18913 = clojure.string.split.cljs$core$IFn$_invoke$arity$2(cljs.core.name(k),/-/);
-var first_word = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__18913,(0),null);
-var words = cljs.core.nthnext(vec__18913,(1));
+var vec__18911 = clojure.string.split.cljs$core$IFn$_invoke$arity$2(cljs.core.name(k),/-/);
+var first_word = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__18911,(0),null);
+var words = cljs.core.nthnext(vec__18911,(1));
 if((cljs.core.empty_QMARK_(words)) || (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2("aria",first_word)) || (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2("data",first_word))){
 return k;
 } else {
@@ -117,11 +117,11 @@ sablono.util.camel_case_keys = (function sablono$util$camel_case_keys(m){
 if(cljs.core.map_QMARK_(m)){
 var ks = cljs.core.keys(m);
 var kmap = cljs.core.zipmap(ks,cljs.core.map.cljs$core$IFn$_invoke$arity$2(sablono.util.camel_case,ks));
-var G__18915 = clojure.set.rename_keys(m,kmap);
+var G__18913 = clojure.set.rename_keys(m,kmap);
 if(cljs.core.map_QMARK_(cljs.core.cst$kw$style.cljs$core$IFn$_invoke$arity$1(m))){
-return cljs.core.update_in.cljs$core$IFn$_invoke$arity$3(G__18915,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$style], null),sablono$util$camel_case_keys);
+return cljs.core.update_in.cljs$core$IFn$_invoke$arity$3(G__18913,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.cst$kw$style], null),sablono$util$camel_case_keys);
 } else {
-return G__18915;
+return G__18913;
 }
 } else {
 return m;
@@ -144,11 +144,11 @@ return clojure.set.rename_keys(sablono.util.camel_case_keys(attrs),new cljs.core
  * Join the `classes` with a whitespace.
  */
 sablono.util.join_classes = (function sablono$util$join_classes(classes){
-return clojure.string.join.cljs$core$IFn$_invoke$arity$2(" ",cljs.core.flatten(cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__18916_SHARP_){
-if(typeof p1__18916_SHARP_ === 'string'){
-return p1__18916_SHARP_;
+return clojure.string.join.cljs$core$IFn$_invoke$arity$2(" ",cljs.core.flatten(cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__18914_SHARP_){
+if(typeof p1__18914_SHARP_ === 'string'){
+return p1__18914_SHARP_;
 } else {
-return cljs.core.seq(p1__18916_SHARP_);
+return cljs.core.seq(p1__18914_SHARP_);
 
 }
 }),classes)));

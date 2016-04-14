@@ -2,56 +2,56 @@
 goog.provide('hipo.attribute');
 goog.require('cljs.core');
 goog.require('hipo.hiccup');
-hipo.attribute.style_handler = new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$target,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$attr,"style"], null),cljs.core.cst$kw$fn,(function (p1__12338_SHARP_,p2__12339_SHARP_,p3__12340_SHARP_,p4__12337_SHARP_){
-var seq__12341 = cljs.core.seq(p4__12337_SHARP_);
-var chunk__12342 = null;
-var count__12343 = (0);
-var i__12344 = (0);
+hipo.attribute.style_handler = new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$target,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$attr,"style"], null),cljs.core.cst$kw$fn,(function (p1__12336_SHARP_,p2__12337_SHARP_,p3__12338_SHARP_,p4__12335_SHARP_){
+var seq__12339 = cljs.core.seq(p4__12335_SHARP_);
+var chunk__12340 = null;
+var count__12341 = (0);
+var i__12342 = (0);
 while(true){
-if((i__12344 < count__12343)){
-var vec__12345 = chunk__12342.cljs$core$IIndexed$_nth$arity$2(null,i__12344);
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__12345,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__12345,(1),null);
-(p1__12338_SHARP_["style"][cljs.core.name(k)] = v);
+if((i__12342 < count__12341)){
+var vec__12343 = chunk__12340.cljs$core$IIndexed$_nth$arity$2(null,i__12342);
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__12343,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__12343,(1),null);
+(p1__12336_SHARP_["style"][cljs.core.name(k)] = v);
 
-var G__12347 = seq__12341;
-var G__12348 = chunk__12342;
-var G__12349 = count__12343;
-var G__12350 = (i__12344 + (1));
-seq__12341 = G__12347;
-chunk__12342 = G__12348;
-count__12343 = G__12349;
-i__12344 = G__12350;
+var G__12345 = seq__12339;
+var G__12346 = chunk__12340;
+var G__12347 = count__12341;
+var G__12348 = (i__12342 + (1));
+seq__12339 = G__12345;
+chunk__12340 = G__12346;
+count__12341 = G__12347;
+i__12342 = G__12348;
 continue;
 } else {
-var temp__4657__auto__ = cljs.core.seq(seq__12341);
+var temp__4657__auto__ = cljs.core.seq(seq__12339);
 if(temp__4657__auto__){
-var seq__12341__$1 = temp__4657__auto__;
-if(cljs.core.chunked_seq_QMARK_(seq__12341__$1)){
-var c__7287__auto__ = cljs.core.chunk_first(seq__12341__$1);
-var G__12351 = cljs.core.chunk_rest(seq__12341__$1);
-var G__12352 = c__7287__auto__;
-var G__12353 = cljs.core.count(c__7287__auto__);
-var G__12354 = (0);
-seq__12341 = G__12351;
-chunk__12342 = G__12352;
-count__12343 = G__12353;
-i__12344 = G__12354;
+var seq__12339__$1 = temp__4657__auto__;
+if(cljs.core.chunked_seq_QMARK_(seq__12339__$1)){
+var c__7287__auto__ = cljs.core.chunk_first(seq__12339__$1);
+var G__12349 = cljs.core.chunk_rest(seq__12339__$1);
+var G__12350 = c__7287__auto__;
+var G__12351 = cljs.core.count(c__7287__auto__);
+var G__12352 = (0);
+seq__12339 = G__12349;
+chunk__12340 = G__12350;
+count__12341 = G__12351;
+i__12342 = G__12352;
 continue;
 } else {
-var vec__12346 = cljs.core.first(seq__12341__$1);
-var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__12346,(0),null);
-var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__12346,(1),null);
-(p1__12338_SHARP_["style"][cljs.core.name(k)] = v);
+var vec__12344 = cljs.core.first(seq__12339__$1);
+var k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__12344,(0),null);
+var v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__12344,(1),null);
+(p1__12336_SHARP_["style"][cljs.core.name(k)] = v);
 
-var G__12355 = cljs.core.next(seq__12341__$1);
-var G__12356 = null;
-var G__12357 = (0);
-var G__12358 = (0);
-seq__12341 = G__12355;
-chunk__12342 = G__12356;
-count__12343 = G__12357;
-i__12344 = G__12358;
+var G__12353 = cljs.core.next(seq__12339__$1);
+var G__12354 = null;
+var G__12355 = (0);
+var G__12356 = (0);
+seq__12339 = G__12353;
+chunk__12340 = G__12354;
+count__12341 = G__12355;
+i__12342 = G__12356;
 continue;
 }
 } else {
@@ -85,20 +85,20 @@ return el.removeAttributeNS(nns,cljs.core.name(k));
 return el.removeAttribute(cljs.core.name(k));
 }
 });
-hipo.attribute.default_handler_fns = new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$prop,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$fn,(function (p1__12359_SHARP_,p2__12360_SHARP_,p3__12362_SHARP_,p4__12361_SHARP_){
-return hipo.attribute.set_property_value(p1__12359_SHARP_,p2__12360_SHARP_,p4__12361_SHARP_);
-})], null),cljs.core.cst$kw$attr,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$fn,(function (p1__12364_SHARP_,p2__12365_SHARP_,p3__12367_SHARP_,p4__12363_SHARP_,p5__12366_SHARP_){
-if(cljs.core.truth_(p4__12363_SHARP_)){
-return hipo.attribute.set_attribute_BANG_(p1__12364_SHARP_,p2__12365_SHARP_,p4__12363_SHARP_,p5__12366_SHARP_);
+hipo.attribute.default_handler_fns = new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$prop,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$fn,(function (p1__12357_SHARP_,p2__12358_SHARP_,p3__12360_SHARP_,p4__12359_SHARP_){
+return hipo.attribute.set_property_value(p1__12357_SHARP_,p2__12358_SHARP_,p4__12359_SHARP_);
+})], null),cljs.core.cst$kw$attr,new cljs.core.PersistentArrayMap(null, 1, [cljs.core.cst$kw$fn,(function (p1__12362_SHARP_,p2__12363_SHARP_,p3__12365_SHARP_,p4__12361_SHARP_,p5__12364_SHARP_){
+if(cljs.core.truth_(p4__12361_SHARP_)){
+return hipo.attribute.set_attribute_BANG_(p1__12362_SHARP_,p2__12363_SHARP_,p4__12361_SHARP_,p5__12364_SHARP_);
 } else {
-return hipo.attribute.remove_attribute_BANG_(p1__12364_SHARP_,p2__12365_SHARP_,p5__12366_SHARP_);
+return hipo.attribute.remove_attribute_BANG_(p1__12362_SHARP_,p2__12363_SHARP_,p5__12364_SHARP_);
 }
 })], null)], null);
-hipo.attribute.default_handlers = new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$target,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$ns,"svg",cljs.core.cst$kw$attr,"class"], null),cljs.core.cst$kw$type,cljs.core.cst$kw$attr], null),new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$target,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$tag,"input",cljs.core.cst$kw$attr,new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, ["value",null,"checked",null], null), null)], null),cljs.core.cst$kw$type,cljs.core.cst$kw$prop], null),new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$target,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$tag,"input",cljs.core.cst$kw$attr,"autofocus"], null),cljs.core.cst$kw$fn,(function (p1__12369_SHARP_,p2__12370_SHARP_,p3__12371_SHARP_,p4__12368_SHARP_){
-if(cljs.core.truth_(p4__12368_SHARP_)){
-p1__12369_SHARP_.focus();
+hipo.attribute.default_handlers = new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$target,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$ns,"svg",cljs.core.cst$kw$attr,"class"], null),cljs.core.cst$kw$type,cljs.core.cst$kw$attr], null),new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$target,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$tag,"input",cljs.core.cst$kw$attr,new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, ["value",null,"checked",null], null), null)], null),cljs.core.cst$kw$type,cljs.core.cst$kw$prop], null),new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$target,new cljs.core.PersistentArrayMap(null, 2, [cljs.core.cst$kw$tag,"input",cljs.core.cst$kw$attr,"autofocus"], null),cljs.core.cst$kw$fn,(function (p1__12367_SHARP_,p2__12368_SHARP_,p3__12369_SHARP_,p4__12366_SHARP_){
+if(cljs.core.truth_(p4__12366_SHARP_)){
+p1__12367_SHARP_.focus();
 
-return p1__12369_SHARP_.setAttribute(p2__12370_SHARP_,p4__12368_SHARP_);
+return p1__12367_SHARP_.setAttribute(p2__12368_SHARP_,p4__12366_SHARP_);
 } else {
 return null;
 }
@@ -131,10 +131,10 @@ return and__6472__auto__;
 hipo.attribute.handler = (function hipo$attribute$handler(m,ns,tag,attr){
 var v = cljs.core.concat.cljs$core$IFn$_invoke$arity$2(cljs.core.cst$kw$attribute_DASH_handlers.cljs$core$IFn$_invoke$arity$1(m),hipo.attribute.default_handlers);
 var h = cljs.core.some(((function (v){
-return (function (p1__12372_SHARP_){
-var t = cljs.core.cst$kw$target.cljs$core$IFn$_invoke$arity$1(p1__12372_SHARP_);
+return (function (p1__12370_SHARP_){
+var t = cljs.core.cst$kw$target.cljs$core$IFn$_invoke$arity$1(p1__12370_SHARP_);
 if(cljs.core.truth_(hipo.attribute.target_matches_QMARK_(t,ns,tag,cljs.core.name(attr)))){
-return p1__12372_SHARP_;
+return p1__12370_SHARP_;
 } else {
 return null;
 }
