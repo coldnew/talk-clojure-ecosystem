@@ -1,8 +1,0 @@
-/target
-/.nrepl-port
-/.repl-history
-/resources/bower_components/
-/out/
-/node_modules/
-/resources/.DS_Store
-*.DS_Store
