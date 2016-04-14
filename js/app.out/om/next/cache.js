@@ -15,11 +15,11 @@ om.next.cache.Cache.prototype.add = (function (id,x){
 var self__ = this;
 var this$ = this;
 if((self__.size <= self__.arr.length)){
-var id_SINGLEQUOTE__12911 = self__.arr.shift();
-cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(self__.index,((function (id_SINGLEQUOTE__12911,this$){
-return (function (p1__12910_SHARP_){
-return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(p1__12910_SHARP_,id_SINGLEQUOTE__12911),id,x);
-});})(id_SINGLEQUOTE__12911,this$))
+var id_SINGLEQUOTE__12913 = self__.arr.shift();
+cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$2(self__.index,((function (id_SINGLEQUOTE__12913,this$){
+return (function (p1__12912_SHARP_){
+return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(p1__12912_SHARP_,id_SINGLEQUOTE__12913),id,x);
+});})(id_SINGLEQUOTE__12913,this$))
 );
 } else {
 cljs.core.swap_BANG_.cljs$core$IFn$_invoke$arity$4(self__.index,cljs.core.assoc,id,x);
@@ -51,7 +51,7 @@ return (new om.next.cache.Cache(arr,index,size));
 });
 
 om.next.cache.cache = (function om$next$cache$cache(size){
-return (new om.next.cache.Cache([],(function (){var G__12913 = cljs.core.PersistentArrayMap.EMPTY;
-return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__12913) : cljs.core.atom.call(null,G__12913));
+return (new om.next.cache.Cache([],(function (){var G__12915 = cljs.core.PersistentArrayMap.EMPTY;
+return (cljs.core.atom.cljs$core$IFn$_invoke$arity$1 ? cljs.core.atom.cljs$core$IFn$_invoke$arity$1(G__12915) : cljs.core.atom.call(null,G__12915));
 })(),size));
 });

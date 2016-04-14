@@ -51,8 +51,8 @@ var s__$1 = cs;
 while(true){
 var i__$1 = s__$1.indexOf(hipo.hiccup.class_separator);
 if((i__$1 > (0))){
-var G__12121 = s__$1.replace(hipo.hiccup.class_separator," ");
-s__$1 = G__12121;
+var G__12257 = s__$1.replace(hipo.hiccup.class_separator," ");
+s__$1 = G__12257;
 continue;
 } else {
 return s__$1;
@@ -162,8 +162,8 @@ return cljs.core.vector_QMARK_(o);
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(c,i)){
 return true;
 } else {
-var G__12122 = (i + (1));
-i = G__12122;
+var G__12258 = (i + (1));
+i = G__12258;
 continue;
 }
 } else {
@@ -200,7 +200,7 @@ hipo.hiccup.sentinel = (new hipo.hiccup.Sentinel());
 hipo.hiccup.conjs_BANG_ = (function hipo$hiccup$conjs_BANG_(v,s){
 while(true){
 if(cljs.core.seq(s)){
-var G__12123 = (function (){var f = cljs.core.first(s);
+var G__12259 = (function (){var f = cljs.core.first(s);
 if(cljs.core.truth_((function (){var or__6484__auto__ = hipo.hiccup.literal_QMARK_(f);
 if(cljs.core.truth_(or__6484__auto__)){
 return or__6484__auto__;
@@ -213,9 +213,9 @@ return cljs.core.conj_BANG_.cljs$core$IFn$_invoke$arity$2(v,f);
 return hipo$hiccup$conjs_BANG_(v,f);
 }
 })();
-var G__12124 = cljs.core.rest(s);
-v = G__12123;
-s = G__12124;
+var G__12260 = cljs.core.rest(s);
+v = G__12259;
+s = G__12260;
 continue;
 } else {
 return v;
@@ -236,11 +236,11 @@ var f = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(v__$1,(0),hipo.hiccup.sentin
 if((hipo.hiccup.sentinel === f)){
 return cljs.core.persistent_BANG_(acc);
 } else {
-var G__12125 = ((cljs.core.seq_QMARK_(f))?hipo.hiccup.conjs_BANG_(acc,f):((!((f == null)))?cljs.core.conj_BANG_.cljs$core$IFn$_invoke$arity$2(acc,f):acc
+var G__12261 = ((cljs.core.seq_QMARK_(f))?hipo.hiccup.conjs_BANG_(acc,f):((!((f == null)))?cljs.core.conj_BANG_.cljs$core$IFn$_invoke$arity$2(acc,f):acc
 ));
-var G__12126 = cljs.core.subvec.cljs$core$IFn$_invoke$arity$2(v__$1,(1));
-acc = G__12125;
-v__$1 = G__12126;
+var G__12262 = cljs.core.subvec.cljs$core$IFn$_invoke$arity$2(v__$1,(1));
+acc = G__12261;
+v__$1 = G__12262;
 continue;
 }
 break;
