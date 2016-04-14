@@ -28,7 +28,7 @@
  '[pandeiro.boot-http    :refer [serve]])
 
 (deftask build []
-  (comp (speak)
+  (comp
         (cljs)))
 
 (deftask run []
@@ -36,11 +36,13 @@
         (watch)
         (cljs-repl)
         (reload)
+         (speak)
         (build)))
 
-(deftask prod []
+(deftask production []
   (task-options! cljs {:optimizations :advanced})
   identity)
+
 
 (deftask development []
   (task-options! cljs {:optimizations :none :source-map true}
@@ -52,3 +54,9 @@
   []
   (comp (development)
         (run)))
+
+(deftask prod
+  "Simple alias to run application in production mode"
+  []
+  (comp (production)
+        (build)))
