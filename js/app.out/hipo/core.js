@@ -26,23 +26,23 @@ return (el[hipo.core.hiccup_property] = h);
  *   
  */
 hipo.core.reconciliate_BANG_ = (function hipo$core$reconciliate_BANG_(var_args){
-var args12716 = [];
-var len__7542__auto___12719 = arguments.length;
-var i__7543__auto___12720 = (0);
+var args12901 = [];
+var len__7542__auto___12904 = arguments.length;
+var i__7543__auto___12905 = (0);
 while(true){
-if((i__7543__auto___12720 < len__7542__auto___12719)){
-args12716.push((arguments[i__7543__auto___12720]));
+if((i__7543__auto___12905 < len__7542__auto___12904)){
+args12901.push((arguments[i__7543__auto___12905]));
 
-var G__12721 = (i__7543__auto___12720 + (1));
-i__7543__auto___12720 = G__12721;
+var G__12906 = (i__7543__auto___12905 + (1));
+i__7543__auto___12905 = G__12906;
 continue;
 } else {
 }
 break;
 }
 
-var G__12718 = args12716.length;
-switch (G__12718) {
+var G__12903 = args12901.length;
+switch (G__12903) {
 case 2:
 return hipo.core.reconciliate_BANG_.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -56,7 +56,7 @@ return hipo.core.reconciliate_BANG_.cljs$core$IFn$_invoke$arity$4((arguments[(0)
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12716.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args12901.length)].join('')));
 
 }
 });
