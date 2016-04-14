@@ -38,7 +38,7 @@
         (reload)
         (build)))
 
-(deftask production []
+(deftask prod []
   (task-options! cljs {:optimizations :advanced})
   identity)
 
