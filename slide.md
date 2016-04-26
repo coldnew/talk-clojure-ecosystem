@@ -11,9 +11,99 @@ Yen-Chin, Lee
 
 class: center, middle, inverse
 
-# About Clojure
+
+<img src="picts/clojure.png" alt="clojure.png" width="20%" />
+
+# Clojure
 
 ---
+class: center, middle
+
+<img src="picts/alisp.png" alt="alisp.png" width="70%" />
+# It is a .red[LISP] dialect
+
+---
+class: center, middle
+
+<img src="picts/notagain.png" alt="notagain.png" width="70%" />
+
+---
+class: center, middle
+
+<img src="picts/lisp_cycles.png" alt="lisp_cycles.png" width="100%" />
+
+---
+class: center, middle
+
+<img src="picts/lisp-vs-javascript.png" alt="lisp-vs-javascript.png" width="70%" />
+
+---
+class: center, middle
+
+<img src="picts/cljs-vs-js.png" alt="cljs-vs-js.png" width="100%" />
+
+---
+class: center, middle
+
+## Lisp is easy
+
+<img src="picts/lisp-expression.png" alt="lisp-expression.png" width="100%" />
+
+---
+.left-column[
+# Author
+]
+.right-column[
+<img class="center" src="picts/rich_hickey.png" alt="rich_hickey.png" width="60%"/>
+<br>
+Rich Hickey (Author of Clojure)
+]
+
+---
+
+.left-column[
+## Company
+]
+.right-column[
+            <br><br><br>
+![cognitect](picts/cognitect.png)
+
+<br>
+
+<a id="join-button" target="_blank" class="btn btn-link btn-lg" href="http://cognitect.com/">
+    Cognitect (Company behind Clojure)
+</a>
+]
+
+---
+
+## Clojure, ClojureScript, ClojureCLR
+
+<br><br><br>
+![cljall](picts/cljall.png)
+
+<br>
+
+---
+
+## Try Clojure ([website](http://www.tryclj.com/))
+
+<iframe id="try" src="http://www.tryclj.com/" frameborder="0" allowfullscreen></iframe>
+
+---
+
+## Try ClojureScript ([website](http://clojurescript.net/))
+
+<iframe id="try" src="http://clojurescript.net/" frameborder="0" allowfullscreen></iframe>
+
+---
+
+## ClojureScript on-the-fly ([website](http://app.klipse.tech/))
+
+<div id="klipse"></div>
+
+---
+
 
 class: center, middle, inverse
 
@@ -135,6 +225,75 @@ name: ide
     Go to Wbsite
 </a>
 ]
+
+---
+class: center, middle, inverse
+
+# Building System
+
+---
+
+name: build
+
+.left-column[
+## Leinigen
+]
+.right-column[
+<br><br><br>
+![lein](picts/lein.png)
+
+<a id="join-button" target="_blank" class="btn btn-link btn-lg" href="http://leiningen.org/">
+    Go to Website
+</a>
+
+]
+
+---
+
+.left-column[
+## Leinigen
+## Boot
+]
+.right-column[
+<br><br><br>
+![boot](picts/boot.png)
+
+<a id="join-button" target="_blank" class="btn btn-link btn-lg" href="http://boot-clj.com/">
+    Go to Website
+</a>
+]
+
+---
+.left-column[
+## Leinigen
+## Boot
+## Inlein
+]
+.right-column[
+
+```clojure
+#!/usr/bin/env inlein
+
+'{:dependencies [[org.clojure/clojure "1.8.0"]
+                 [com.hypirion/primes "0.2.1"]]}
+
+(require '[com.hypirion.primes :as p])
+
+(when-not (first *command-line-args*)
+  (println "Usage:" (System/getProperty "$0") "prime-number")
+  (System/exit 1))
+
+(-> (first *command-line-args*)
+    (Long/parseLong)
+    (p/get)
+    println)
+```
+
+<a id="join-button" target="_blank" class="btn btn-link btn-lg" href="https://github.com/hyPiRion/inlein">
+    Go to Website
+</a>
+]
+
 
 ---
 class: center, middle, inverse
@@ -348,6 +507,23 @@ name: web
 ## luminus
 ## sente
 ## hoplon
+]
+.right-column[
+<br><br>
+<br><br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wVXjExRiFy0" frameborder="0" allowfullscreen></iframe>
+
+<a id="join-button" target="_blank" class="btn btn-link btn-lg" href="https://github.com/hoplon/hoplon">
+    Go to Website
+</a>
+]
+
+---
+.left-column[
+# Web Frameworks
+## luminus
+## sente
+## hoplon
 ## pedestal
 ]
 .right-column[
@@ -400,7 +576,6 @@ name: web
 </a>
 ]
 
-
 ---
 .left-column[
 # Web Frameworks
@@ -419,6 +594,123 @@ name: web
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_LghX4oDWcY" frameborder="0" allowfullscreen></iframe>
 
 <a id="join-button" target="_blank" class="btn btn-link btn-lg" href="https://github.com/weavejester/compojure">
+    Go to Website
+</a>
+]
+
+---
+
+class: center, middle, inverse
+
+# ClojureScript on react.js
+
+---
+
+.left-column[
+# Reactjs
+]
+.right-column[
+## Om-Next
+<br><br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xz389Ek2eS8" frameborder="0" allowfullscreen></iframe>
+
+<a id="join-button" target="_blank" class="btn btn-link btn-lg" href="https://github.com/omcljs/om">
+    Go to Website
+</a>
+]
+
+---
+
+.left-column[
+# Reactjs
+]
+.right-column[
+## Reagent
+<br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wq6ctyZBb0A" frameborder="0" allowfullscreen></iframe>
+
+<a id="join-button" target="_blank" class="btn btn-link btn-lg" href="https://reagent-project.github.io/">
+    Go to Website
+</a>
+]
+
+---
+
+.left-column[
+# Reactjs
+]
+.right-column[
+## Quiescent
+<br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oRmj3IUkRVk" frameborder="0" allowfullscreen></iframe>
+
+<a id="join-button" target="_blank" class="btn btn-link btn-lg" href="https://github.com/levand/quiescent">
+    Go to Website
+</a>
+]
+
+---
+
+.left-column[
+# Reactjs
+]
+.right-column[
+## RUM
+<br><br>
+<iframe src="https://player.vimeo.com/video/122316380" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<a id="join-button" target="_blank" class="btn btn-link btn-lg" href="https://github.com/tonsky/rum">
+    Go to Website
+</a>
+]
+
+
+---
+
+.left-column[
+# Reactjs
+Tool for handling ClojureScript + React-Native on iOS
+]
+.right-column[
+## Ambly
+<br>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Dt2zNemLCCk" frameborder="0" allowfullscreen></iframe>
+
+<a id="join-button" target="_blank" class="btn btn-link btn-lg" href="https://github.com/omcljs/ambly">
+    Go to Website
+</a>
+]
+
+---
+.left-column[
+# Reactjs
+Tool for handle ClojureScript + React-Native Environment
+]
+.right-column[
+## re-natal
+<br>
+<br>
+
+![re-natal](picts/re-natal.png)
+<a id="join-button" target="_blank" class="btn btn-link btn-lg" href="https://github.com/drapanjanas/re-natal">
+    Go to Website
+</a>
+]
+
+---
+.left-column[
+# Reactjs
+Example on
+Clojurescript + React-Native
+]
+.right-column[
+## luno-react-native
+<br>
+![luno](picts/luno.png)
+
+<a id="join-button" target="_blank" class="btn btn-link btn-lg" href="https://github.com/alwx/luno-react-native">
     Go to Website
 </a>
 ]
@@ -622,13 +914,13 @@ name: distribute
 
 class: center, middle, inverse
 
-# Other Interesting Libraries
+# Interesting Projects or Libraries
 
 ---
 
 .left-column[
 ## core.async
-### - code
+### Code
 ]
 .right-column[
 ```clojure
@@ -663,8 +955,8 @@ class: center, middle, inverse
 
 .left-column[
 ## core.async
-### - code
-### - demo
+### Code
+### Demo
 ]
 
 .right-column[
@@ -676,9 +968,9 @@ class: center, middle, inverse
 
 .left-column[
 ## core.async
-### - code
-### - demo
-### - video
+### Code
+### Demo
+### Video
 ]
 
 .right-column[
@@ -836,6 +1128,35 @@ class: center, middle, inverse
 </a>
 ]
 
+---
+
+.left-column[
+## core.typed
+]
+.right-column[
+<br><br>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yG9CffLlXx0" frameborder="0" allowfullscreen></iframe>
+
+<a id="join-button" target="_blank" class="btn btn-link btn-lg" href="https://github.com/clojure/core.typed">
+    Go to Website
+</a>
+]
+
+---
+
+.left-column[
+## Schema
+]
+.right-column[
+<br><br>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o_jtwIs2Ot8" frameborder="0" allowfullscreen></iframe>
+
+<a id="join-button" target="_blank" class="btn btn-link btn-lg" href="https://github.com/plumatic/schema">
+    Go to Website
+</a>
+]
 
 ---
 
@@ -923,7 +1244,7 @@ name: resource
 .right-column[
 <br><br><br>
 
-!grimoire(picts/grimoire.png)
+![grimoire](picts/grimoire.png)
 <a id="join-button" target="_blank" class="btn btn-link btn-lg" href="https://www.conj.io/">
     Go to Website
 </a>
@@ -943,7 +1264,7 @@ name: resource
 .right-column[
 <br><br><br>
 
-!toolbox(picts/toolbox.png)
+![toolbox](picts/toolbox.png)
 <a id="join-button" target="_blank" class="btn btn-link btn-lg" href="http://www.clojure-toolbox.com/">
     Go to Website
 </a>
@@ -964,10 +1285,42 @@ name: resource
 .right-column[
 <br><br><br>
 
-!styleguide(picts/styleguide.png)
+![styleguide](picts/styleguide.png)
 <a id="join-button" target="_blank" class="btn btn-link btn-lg" href="https://github.com/bbatsov/clojure-style-guide">
     Go to Website
 </a>
+]
+
+---
+
+.left-column[
+## Resources
+### Videos
+]
+.right-column[
+<br><br><br>
+
+- [ClojureTV](https://www.youtube.com/user/ClojureTV)
+
+  Contains plenty of talks of Clojure conferences.
+
+- [Brian Will's Series](https://www.youtube.com/playlist?list=PLAC43CFB134E85266)
+
+  Is a series of videos that teaches you Clojure.
+
+- [InfoQ](http://www.infoq.com/clojure/)
+
+   Clojure content on InfoQ.
+
+- [Vimo](https://vimeo.com/search?q=clojure)
+
+   Clojure content on Vimo.
+
+- [Sills Master](https://skillsmatter.com/explore?content=skillscasts&location=&q=clojure)
+
+   Clojure content on Sills Master.
+
+.footnote[.red[*] [Rodrigo Flores's Corner - Clojure Ecosystem](http://blog.rlmflores.me/clojure/2015/12/31/clojure-ecosystem/)]
 ]
 
 ---
@@ -1056,7 +1409,7 @@ name: community
 
 .left-column[
 ## Clojure Communities
-### - Slack
+### Slack
 ]
 .right-column[
             <br><br><br>
@@ -1071,8 +1424,8 @@ name: community
 
 .left-column[
 ## Clojure Communities
-### - Slack
-### - IRC (#clojure at freenode.net)
+### Slack
+### IRC (#clojure at freenode.net)
 ]
 .right-column[
             <br><br><br>
@@ -1087,9 +1440,9 @@ name: community
 
 .left-column[
 ## Clojure Communities
-### - Slack
-### - IRC (#clojure at freenode.net)
-### - Mailing-List
+### Slack
+### IRC (#clojure at freenode.net)
+### Mailing-List
 ]
 .right-column[
             <br><br><br>
@@ -1112,7 +1465,7 @@ name: communitytw
 
 .left-column[
 ## [clojure.tw](http://clojure-tw.github.io)
-### - Slack (#clojure-taiwan)
+### Slack (#clojure-taiwan)
 ]
 .right-column[
             <br><br><br>
@@ -1127,8 +1480,8 @@ name: communitytw
 
 .left-column[
 ## [clojure.tw](http://clojure-tw.github.io)
-### - Slack
-### - Telegram
+### Slack
+### Telegram
 ]
 .right-column[
             <br><br>
@@ -1143,9 +1496,9 @@ name: communitytw
 
 .left-column[
 ## [clojure.tw](http://clojure-tw.github.io)
-### - Slack
-### - Telegram
-### - Facebook
+### Slack
+### Telegram
+### Facebook
 ]
 .right-column[
             <br><br><br>
@@ -1160,10 +1513,10 @@ name: communitytw
 
 .left-column[
 ## [clojure.tw](http://clojure-tw.github.io)
-### - Slack
-### - Telegram
-### - Facebook
-### - Twitter
+### Slack
+### Telegram
+### Facebook
+### Twitter
 ]
 .right-column[
             <br><br><br>
@@ -1178,11 +1531,11 @@ name: communitytw
 
 .left-column[
 ## [clojure.tw](http://clojure-tw.github.io)
-### - Slack
-### - Telegram
-### - Facebook
-### - Twitter
-### - Meetup
+### Slack
+### Telegram
+### Facebook
+### Twitter
+### Meetup
 ]
 .right-column[
             <br><br><br>
@@ -1197,11 +1550,12 @@ name: communitytw
 
 .left-column[
 ## [clojure.tw](http://clojure-tw.github.io)
-### - Slack
-### - Telegram
-### - Facebook
-### - Twitter
-### - GitHub
+### Slack
+### Telegram
+### Facebook
+### Twitter
+### Meetup
+### GitHub
 ]
 .right-column[
 <br><br><br>
