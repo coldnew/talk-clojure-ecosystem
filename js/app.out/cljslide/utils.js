@@ -7,11 +7,11 @@ goog.require('hipo.core');
  */
 cljslide.utils.set_element_to_id_BANG_ = (function cljslide$utils$set_element_to_id_BANG_(id,body){
 var dom = document.getElementById(id);
-var el = (function (){var v13446 = body;
-var el__12891__auto__ = hipo.interpreter.create(v13446,null);
-hipo.core.set_hiccup_BANG_(el__12891__auto__,v13446);
+var el = (function (){var v12726 = body;
+var el__12706__auto__ = hipo.interpreter.create(v12726,null);
+hipo.core.set_hiccup_BANG_(el__12706__auto__,v12726);
 
-return el__12891__auto__;
+return el__12706__auto__;
 })();
 return dom.innerHTML = el.innerHTML;
 });
